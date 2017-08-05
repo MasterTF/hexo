@@ -12,3 +12,4 @@ categories:
 https://doron.gitbooks.io/akka-doc-zh/content/index.html
 http://developer.lightbend.com/guides/akka-quickstart-java/
 http://doc.akka.io/docs/akka/current/java/guide/index.html
+https://github.com/jasonqu/akka-doc-cn
