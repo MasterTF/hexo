@@ -90,7 +90,7 @@ Consumer按照消息的存储顺序在日志文件中查找消息。
 
 对于复制配置参数为N的Topic，我们能容忍N-1的服务器故障，而不会丢失已经Commit的数据。有关这些保证更详细的信息，参见文档的设计部分。
 
-Kafka as a Messaging System
+## Kafka as a Messaging System
 
 Kafka的流模式和传统的消息系统有什么区别？
 
@@ -130,7 +130,7 @@ Kafka使用的存储结构，使其提供相同的能力，无论是存储50KB�
 
 Stream API基于Kafka的核心函数古剑：使用Producer和Consumer API用于输入，使用Kafka作为有状态的存储，使用group机制来实现Stream处理器的容错。
 
-Putting the Pieces Together
+## Putting the Pieces Together
 
 消息、存储和流处理这种组合看是不寻常，但是Kafka作为流式平台这是必须的。
 
