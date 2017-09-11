@@ -146,8 +146,7 @@ Kafka组合这些能力，并且组合这些对Kafka作为流应用平台和流�
 
 其他关闭Kafka提供的API、功能，参阅其他文档。
 
->
-出处：http://www.cnblogs.com/hzmark/p/kafka_introduction.html
+>出处：http://www.cnblogs.com/hzmark/p/kafka_introduction.html
 
 
 
