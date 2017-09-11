@@ -128,7 +128,7 @@ Kafka使用的存储结构，使其提供相同的能力，无论是存储50KB�
 
 这用于解决以下的一些困难：处理无需的数据，执行有状态的计算等。
 
-Stream API基于Kafka的核心函数古剑：使用Producer和Consumer API用于输入，使用Kafka作为有状态的存储，使用group机制来实现Stream处理器的容错。
+Stream API基于Kafka的核心函数构建：使用Producer和Consumer API用于输入，使用Kafka作为有状态的存储，使用group机制来实现Stream处理器的容错。
 
 ## Putting the Pieces Together
 
