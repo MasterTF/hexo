@@ -295,7 +295,7 @@ public interface HandlerInterceptor {
 }
 ```
 
-拦截器就是我们定义的interceptor，关于拦截器的讲解在 后续博客中
+拦截器就是我们定义的interceptor，关于拦截器的讲解在 [spring拦截器](https://mastertf.github.io/2016/10/09/spring-%E6%8B%A6%E6%88%AA%E5%99%A8/)
 至此，HandlerExecutionChain整个执行脉络也就清楚了：在真正调用其handler对象前，HandlerInterceptor接口实现类组成的数组将会被遍历，其preHandle方法会被依次调用，然后真正的handler对象将被调用。
 handler对象被调用后，就生成了需要的响应数据，在将处理结果写到HttpServletResponse对象之前（SpringMVC称为渲染视图），其postHandle方法会被依次调用。视图渲染完成后，最后afterCompletion方法会被依次调用，整个web请求的处理过程就结束了。
  
