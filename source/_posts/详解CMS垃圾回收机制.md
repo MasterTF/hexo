@@ -13,6 +13,7 @@ categories:
 Concurrent Mark Sweep。
 看名字就知道，CMS是一款并发、使用标记-清除算法的gc。
 CMS是针对老年代进行回收的GC。
+
 <!-- more -->
 ## CMS有什么用？
 CMS以获取最小停顿时间为目的。
