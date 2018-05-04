@@ -20,6 +20,7 @@ RAFT协议作用是保证分布式系统同一数据的一致性（与2pc不同�
 1. Leader（领袖）
 2. Follower（群众）
 3. Candidate（候选人）
+
 Raft将问题分解和具体化：Leader统一处理变更操作请求，一致性协议的作用具化为保证节点间操作日志副本(log replication)一致，以term作为逻辑时钟(logical clock)保证时序，节点运行相同状态机(state machine)得到一致结果。Raft协议具体过程如下：
 
 <!-- more -->
