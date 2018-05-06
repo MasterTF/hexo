@@ -60,9 +60,9 @@ Raft把一致性问题，分解成三个比较独立的子问题，并给出每�
 ![](/img/15254217092487.jpg)
 
 Raft 算法将时间划分成为任意不同长度的任期（term）。任期用连续的数字进行表示。
-每一个任期的开始都是一次选举（election），一个或多个候选人会试图成为领导人。
+每一个任期的开始都是一次选举（election），一个或多个候选人会试图成为领导人。每次选举任期号都增加。
 如果一个候选人赢得了选举，它就会在该任期的剩余时间担任领导人。
-在某些情况下，选票会被瓜分，有可能没有选出领导人，那么，将会开始另一个任期，并且立刻开始下一次选举。
+在某些情况下，选票会被瓜分，有可能没有选出领导人，那么，将会开始**另一个任期**，并且立刻开始下一次选举。
 Raft 算法保证在给定的一个任期最多只有一个领导人。
 
 ### 触发条件
@@ -71,7 +71,7 @@ Raft 算法保证在给定的一个任期最多只有一个领导人。
 
 ### 选举过程
 1. 每个节点以follower启动。
-2. 节点没有接收到leader消息，变成candinate。
+2. 每个节点设置一个150-300ms的随机超时时间（election timeout)，没有接收到leader消息时，变成candinate。
 3. candinate要求其他节点投票。
 4. 各节点投票。
 5. 如果超过半数投票，candinate变成leader。
@@ -168,7 +168,7 @@ Raft 的要求之一就是安全性不能依赖时间：整个系统不能因为
 
 ## 推荐资料
 1. http://thesecretlivesofdata.com/raft/ 
-2. https://github.com/maemual/
+2. https://github.com/maemual/raft-zh_cn
 3. https://www.cnblogs.com/mindwind/p/5231986.html
 4. https://raft.github.io/
 5. https://cloud.tencent.com/developer/article/1005803
