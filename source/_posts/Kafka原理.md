@@ -8,7 +8,7 @@ categories:
     - 消息队列
     - Kafka
 ---
-摘自 https://blog.csdn.net/lizhitao/article/details/39499283
+摘自一篇博客，找不到了 
 
 ## Kafka技术概览
 
@@ -186,4 +186,8 @@ Kafka高度依赖文件系统来存储和缓存消息，一般的人认为磁盘
 这种操作方式明显是非常低效的，这里有四次拷贝，两次系统调用。如果使用sendfile，就可以避免两次拷贝：操作系统将数据直接从页缓存发送到网络上。所以在这个优化的路径中，只有最后一步将数据拷贝到网卡缓存中是需要的。 
 我们期望一个主题上有多个消费者是一种常见的应用场景。利用上述的zero-copy，数据只被拷贝到页缓存一次，然后就可以在每次消费时被重得利用，而不需要将数据存在内存中，然后在每次读的时候拷贝到内核空间中。这使得消息消费速度可以达到网络连接的速度。这样以来，通过页面缓存和sendfile的结合使用，整个kafka集群几乎都已以缓存的方式提供服务，而且即使下游的consumer很多，也不会对整个集群服务造成压力。 
 关于sendfile和zero-copy，请参考：[zero-copy](https://www.ibm.com/developerworks/linux/library/j-zerocopy/)
+
+## 推荐阅读
+1. https://blog.csdn.net/lizhitao/article/details/39499283
+
 
