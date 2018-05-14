@@ -8,7 +8,7 @@ categories:
     - 消息队列
     - Kafka
 ---
-摘自CSDN一篇博客，找不到地址了
+摘自 https://blog.csdn.net/lizhitao/article/details/39499283
 
 ## Kafka技术概览
 
