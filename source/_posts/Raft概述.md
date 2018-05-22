@@ -169,7 +169,7 @@ Raft 的要求之一就是安全性不能依赖时间：整个系统不能因为
 
 ## 推荐资料
 1. http://thesecretlivesofdata.com/raft/ 
-2. https://github.com/maemual/raft-zh_cn
+2. https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md
 3. https://www.cnblogs.com/mindwind/p/5231986.html
 4. https://raft.github.io/
 5. https://cloud.tencent.com/developer/article/1005803
