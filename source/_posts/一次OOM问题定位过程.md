@@ -23,9 +23,9 @@ categories:
 
 之前机器上使用**jps -v **查看过启动参数**：(下面的参数不是当时的，只是日期有差别,删除了公司目录相关参数）**
 
-> 4597 Bootstrap -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 -Djava.net.preferIPv6Addresses=false -Djava.io.tmpdir=/tmp -Djetty.defaultsDescriptor=WEB-INF/web.xml -Duser.timezone=GMT+08 -Xloggc:/XX/gc.log.201708251824 -XX:ErrorFile=/vmerr.log.201708251824 -XX:HeapDumpPath=/XX/bdop.heaperr.log.201708251824 -XX:+HeapDumpOnOutOfMemoryError -XX:+DisableExplicitGC -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Denvironment=test -Dmedis_environment=test -Dcore.zookeeper=sgconfig-zk.sankuai.com:9331 
+> 4597 Bootstrap -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 -Djava.net.preferIPv6Addresses=false -Djava.io.tmpdir=/tmp -Djetty.defaultsDescriptor=WEB-INF/web.xml -Duser.timezone=GMT+08 -Xloggc:/XX/gc.log.201708251824 -XX:ErrorFile=/vmerr.log.201708251824 -XX:HeapDumpPath=/XX/XXXXX/logs/xxxx.heaperr.log.201708251824 -XX:+HeapDumpOnOutOfMemoryError -XX:+DisableExplicitGC -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Denvironment=test -Dmedis_environment=test -Dcore.zookeeper=sgconfig-zk.sankuai.com:9331 
 
-注意 **XX:HeapDumpPath=/var/sankuai/logs/com.sankuai.sjst.m.bdop.heaperr.log.201708251824 -XX:+HeapDumpOnOutOfMemoryError **参数，这个是配置发生内存溢出时dump出文件到该路径下 。
+注意 **XX:HeapDumpPath=/XX/XXXXX/logs/xxxx.heaperr.log.201708251824 -XX:+HeapDumpOnOutOfMemoryError** 参数，这个是配置发生内存溢出时dump出文件到该路径下 。
 
 到路径下获取dump文件。
 
@@ -35,7 +35,7 @@ ps：从服务器上取文件可用 python -m SimpleHTTPServer开一个http服�
 
 ### MAT工具排查
 
-将下载的dump文件后缀名改为".hprof"，然后使用MAT打开，MAT介绍：
+将下载的dump文件然后使用MAT打开，MAT介绍：
 
 [http://www.jianshu.com/p/d8e247b1e7b2](http://www.jianshu.com/p/d8e247b1e7b2)
 
@@ -66,17 +66,13 @@ ps：从服务器上取文件可用 python -m SimpleHTTPServer开一个http服�
    **导致内存中有大量hashset，最终导致内存溢出**
 
 ## 解决
-
 找到相关负责人修改，限制笛卡尔积最大长度为32，超过这个大小的多音字不再处理。
 
 ## 后续
-
-该问题发生在线下，当天就改完了但没上线。第二天线上也很巧的也发生了一样故障导致OOM。还好前一天已经定位出了问题，直接发布上线解决。
-
-不然线上服务会不可用比较长时间。
+1. 该问题发生在线下，当天就改完了但没上线。第二天线上也很巧的也发生了一样故障导致OOM。还好前一天已经定位出了问题，直接发布上线解决。不然线上服务会不可用比较长时间。
+2. 推荐一个比较好用的jvm命令 jcmd
 
 ## 感想
+1. 线下很奇怪的问题也需要重视，这次如果没有及时定位解决，到了第二天线上出问题就会引起比较严重的事故。会直接导致门店列表页无法展示，几乎影响M端所有系统。
+2. 难得的一次OOM问题排查实战，还是挺有收获的，后续需继续研究jvm及mat工具使用。
 
-1.线下很奇怪的问题也需要重视，这次如果没有及时定位解决，到了第二天线上出问题就会引起比较严重的事故。会直接导致门店列表页无法展示，几乎影响M端所有系统。
-
-2.难得的一次OOM问题排查实战，还是挺有收获的，后续需继续研究jvm及mat工具使用。
