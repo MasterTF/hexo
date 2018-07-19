@@ -14,6 +14,8 @@ categories:
 - vagrant up 启动虚拟机的操作
 - vagrant ssh 登录虚拟机的操作
 
+<!-- more -->
+
 Vagrant还包括如下一些操作：
 
 - vagrant box list
