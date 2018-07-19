@@ -8,6 +8,9 @@ categories:
     - 工具
 ---
 
+介绍下比较好用的zsh安装以及相关的配置
+
+<!-- more -->
 
 ## 安装iTerm2
 iTerm2官方下载地址 http://www.iterm2.com/downloads.html
