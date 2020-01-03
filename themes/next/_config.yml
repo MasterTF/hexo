@@ -202,8 +202,8 @@ post_wordcount:
 # Wechat Subscriber
 wechat_subscriber:
   enabled: true
-  qcode: /images/wechat_official_account.jpg
-  description: subscribe to my blog by scanning my public wechat account
+  qcode: /images/wechat_pay.jpeg
+  description: 可以白嫖我的颜值，不能白嫖我的才华，打赏😆😆！！!
 
 # Declare license on posts
 post_copyright:
@@ -625,5 +625,5 @@ images: images
 # Theme version
 version: 5.1.1
 
-reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
-wechatpay: /images/wechat_account.jpeg
+reward_comment: 打赏完了加微信白嫖颜值😁😁！！！
+wechatpay: /images/wechat_ercode.jpeg
