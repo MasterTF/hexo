@@ -3,9 +3,9 @@ title: Vagrant安装配置
 date: 2017-06-26 10:58:27
 tags:
     - Vagrant
+    - 工具
 categories:
-    - 技术
-    - Vagrant
+    - 工具
 ---
 实际上Vagrant只是一个让你可以方便设置你想要的虚拟机的便携式工具，它底层支持VirtualBox、VMware甚至AWS作为虚拟机系统，本书中我们将使用VirtualBox来进行说明，所以第一步需要先安裝Vagrant和VirtualBox。
 

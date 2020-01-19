@@ -6,5 +6,4 @@ tags:
     - Disruptor
 categories:
     - 技术
-    - JAVA
 ---

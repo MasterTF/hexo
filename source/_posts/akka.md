@@ -7,7 +7,6 @@ tags:
     - distributed
 categories:
     - 技术
-    - akka
 ---
 https://doron.gitbooks.io/akka-doc-zh/content/index.html
 http://developer.lightbend.com/guides/akka-quickstart-java/

@@ -3,9 +3,9 @@ title: ZooKeeper watch机制
 date: 2017-04-24 22:49:14
 tags:
     - zookeeper
+    - 分布式
 categories:
     - 技术
-    - ZooKeeper
 ---
 ## zookeeper watch机制
 一个zk的节点可以被监控，包括这个目录中存储的数据的修改，子节点目录的变化，一旦变化可以通知设置监控的客户端，这个功能是zookeeper对于应用最重要的特性，通过这个特性可以实现的功能包括配置的集中管理，集群管理，分布式锁等等。

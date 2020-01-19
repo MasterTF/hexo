@@ -3,10 +3,9 @@ title: Kafka官方文档翻译--设计
 date: 2017-04-22 12:00:52
 tags:
     - Kafka
+    - 消息队列
 categories:
     - 技术
-    - 消息队列
-    - Kafka
 ---
 
 

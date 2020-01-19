@@ -3,9 +3,9 @@ title: Vgrant使用入门
 date: 2017-06-26 11:26:24
 tags:
     - Vagrant
+    - 工具
 categories:
-    - 技术
-    - Vagrant 
+    - 工具
 ---
 前面讲了Vagrant的几个命令：
 

@@ -3,12 +3,10 @@ title: Raft概述
 date: 2018-04-16 15:38:33
 tags: 
     - 分布式
+    - 一致性
     - Raft
 categories:
     - 技术
-    - 分布式
-    - 一致性
-    - Raft
 ---
 
 ## 概述

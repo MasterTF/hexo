@@ -6,7 +6,6 @@ tags:
     - JAVA
 categories:
     - 技术
-    - JAVA
 ---
 
 ## 背景

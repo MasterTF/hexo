@@ -7,7 +7,6 @@ tags:
 comments: true
 categories:
     - 技术
-    - JAVA
 ---
 ## 什么是CMS？
 Concurrent Mark Sweep。

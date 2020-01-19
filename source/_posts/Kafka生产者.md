@@ -3,10 +3,9 @@ title: Kafka生产者
 date: 2018-04-18 23:17:47
 tags:
     - Kafka
+    - 消息队列
 categories:
     - 技术
-    - 消息队列
-    - Kafka
 ---
 ## 发送消息步骤
 ![](/img/15255335466815.jpg)

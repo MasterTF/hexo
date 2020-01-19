@@ -3,10 +3,9 @@ title: Kafka原理
 date: 2017-05-06 21:53:06
 tags:
     - Kafka
+    - 消息队列
 categories:
     - 技术
-    - 消息队列
-    - Kafka
 ---
 摘自一篇博客，找不到了 
 

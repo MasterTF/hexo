@@ -5,7 +5,6 @@ tags:
     - Spring
 categories:
     - 技术
-    - Spring
 ---
 
 一个请求到达服务器之后，springmvc处理过程：

@@ -6,8 +6,6 @@ tags:
     - RabbitMQ
 categories:
     - 技术
-    - 消息队列
-    - RabbitMQ
 ---
 ## 安装
 mac上安装rabbitmq比较简单，参考官网教程 http://www.rabbitmq.com/install-standalone-mac.html 即可。遇到了下载很慢问题，找了其他网站上下。

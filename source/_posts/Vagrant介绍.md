@@ -3,9 +3,9 @@ title: Vagrant介绍
 date: 2017-06-26 10:56:09
 tags:
     - Vagrant
+    - 工具
 categories:
-    - 技术
-    - Vagrant
+    - 工具
 ---
 
 ## 虚拟开发环境

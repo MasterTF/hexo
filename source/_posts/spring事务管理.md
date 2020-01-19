@@ -7,7 +7,6 @@ tags:
     - 事务
 categories:
     - 技术
-    - Spring
 ---
 ## 事务是什么
 弄清spring事务管理机制，首先要弄清什么是事务。

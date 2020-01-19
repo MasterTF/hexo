@@ -3,10 +3,9 @@ title: Zookeeper学习曲线
 date: 2017-05-13 22:08:06
 tags:
     - zookeeper
-    - distributed
+    - 分布式
 categories:
     - 技术
-    - ZooKeeper
 ---
 ## ZooKeeper 介绍
 http://zookeeper.apache.org/

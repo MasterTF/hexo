@@ -6,8 +6,6 @@ tags:
     - 数据库
 categories:
     - 技术
-    - 数据库
-    - MySql
 ---
 
 ## 锁是什么

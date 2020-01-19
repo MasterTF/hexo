@@ -3,10 +3,9 @@ title: Kafka官方文档翻译--简介
 date: 2017-04-21 11:05:00
 tags:
     - Kafka
+    - 消息队列
 categories:
     - 技术
-    - 消息队列
-    - Kafka
 ---
 
 Kafka擅长于做什么？
