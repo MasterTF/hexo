@@ -1,6 +1,6 @@
 ---
 title: Quorum机制
-date: 2021-0-16 16:51:03
+date: 2021-01-16 16:51:03
 tags:
     - 分布式系统
     - quorum
