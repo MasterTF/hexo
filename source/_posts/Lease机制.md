@@ -2,6 +2,11 @@
 title: Lease机制
 date: 2021-01-15 16:32:35
 tags:
+    - 分布式系统
+    - lease
+categories:
+    - 技术
+    - 分布式系统
 ---
 
 ## 本质
