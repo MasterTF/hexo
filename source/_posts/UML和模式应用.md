@@ -67,15 +67,17 @@ OOD关注软件对象的定义——对象的协作和职责。序列图(sequenc
 - 业务建模：领域模型制品，使应用领域中的重要概念的可视化。
 - 需求：用以补货功能需求和非功能需求的用例模型机器补充性的规格说明制品。
 - 设计：设计模型制品，用于对软件对象进行设计。
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1615884745_96_w2298_h1414.png)
+![](/img/16213446274566.jpg)
 
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1615884761_1_w2076_h690.png)
+
+![](/img/16213446351071.jpg)
+
 
 
 ## OOA:领域模型
 领域模型是OOA最重要的模型，阐述领域中的重要概念。
 领域模型可以作为设计某些软件对象的灵感来源，也作为其他产出物的输入：
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1614828586_28_w1029_h987.png)
+![](/img/16213446468416.jpg)
 
 > 领域模型是对领域内的概念类或现实世界中对象的可视化表示[MO95,Fowler96].领域模型也成为概念模型、领域对象模型和分析对象模型。
 
@@ -87,7 +89,8 @@ OOD关注软件对象的定义——对象的协作和职责。序列图(sequenc
 
 ### 为什么要创建领域模型
 1. 面向对象的关键思想：领域层软件类的名称要源于领域模型中的名称，使对象具有源于领域的信息和职责。有助于减小人的思维与软件模型之间的差异。
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1614760525_37_w1992_h1362.png)
+![](/img/16213446617898.jpg)
+
 
 2. 方便变更与扩展
 3. 管理和隐藏复杂性
@@ -114,7 +117,7 @@ OOD关注软件对象的定义——对象的协作和职责。序列图(sequenc
 **如果我们认为某概念类X不是现实世界中的数字或文本,那么X可能是概念类而不是属性。**
 
 #### 准则：何时使用“描述”类建模
-描述类(descrition class) 包含描述其他事物的信息，如ProductDescription记录item的价格、图片和文字描述。
+描述类(description class) 包含描述其他事物的信息，如ProductDescription记录item的价格、图片和文字描述。
 1. 需要有关商品或服务的描述，对于任何商品或服务的现有实例。
 2. 删除其所有事物的实例后，导致信息丢失，而这些信息是需要维护的。
 3. 减少冗余或重复信息
@@ -135,7 +138,7 @@ OOD关注软件对象的定义——对象的协作和职责。序列图(sequenc
 有两种可选方案：
 1. 新建 状态类，并与X关联
 2. 领域模型中忽略状态的概念，在状态图中显示。
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1615882548_32_w1670_h964.png)
+![](/img/16213447211081.jpg)
 
 #### 准则：在领域模型中增加关联类的可能线索
 1. 有某个属性与关联相关
@@ -170,7 +173,7 @@ OOD关注软件对象的定义——对象的协作和职责。序列图(sequenc
 ### 多重性
 多重性(multiplicity)定义了类A有多少个实例可以和类B的一个实例关联。
 两个类可能有多重关联，应当分别表示。如航班和机场的关系，一个机场有多个航班，但可以继续区分为飞来的航班，和离开的航班
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1614763177_75_w1032_h354.png)
+![](/img/16213447369902.jpg)
 
 ### 属性
 属性(attribute)是对象的逻辑数据值
@@ -215,7 +218,8 @@ OOD关注软件对象的定义——对象的协作和职责。序列图(sequenc
 	- 用户界面
 	- 应用逻辑和软件对象
 	- 技术服务：提供支持性技术服务的常用对象和子系统，例如蜀葵恶寇或错误日志。这些服务通常是独立于应用的，也可在多个系统复用。
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1614842552_58_w592_h589.png)
+![](/img/16213447510519.jpg)
+
 
 - 分层架构解决的问题：
 	- 大部分系统是高度耦合的，代码变更会波及整个系统
@@ -268,12 +272,13 @@ UML中的普通依赖表示：客户(client)元素（任何种类，包括类、
 - UI的草图和原型
 - 数据库模型
 - 报表的草图和原型
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1614847842_59_w996_h1182.png)
+![](/img/16213448515627.jpg)
 
 
 ## GRASP:基于职责设计对象
 OOD之前的输入：
-![enter image description here](http://km.oa.com/files/photos/pictures/202103/1614847764_73_w1030_h357.png)
+![](/img/16213447921708.jpg)
+
 - 用例
 - 序列图
 - 领域模型
