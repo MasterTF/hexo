@@ -6,6 +6,8 @@ tags:
     - 工具
 categories:
     - 工具
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 前面讲了Vagrant的几个命令：
 
@@ -117,7 +119,7 @@ vagrant box remove
   simply run `vagrant up`.
 
 - vagrant suspend
-挂起当前的虚拟机
+  挂起当前的虚拟机
 
   $ vagrant suspend
   [default] Saving VM state and suspending execution...
@@ -232,5 +234,4 @@ Last login: Thu Aug  8 18:58:50 2013 from 10.0.2.2
 vagrant@db:~$
 
 通过上面的信息我们可以看到虚拟机之间通信是畅通的，所以现在开始你伟大的架构设计吧，你想设计怎么样的架构都可以，唯一限制你的就是你主机的硬件配置了。
-
 

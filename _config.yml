@@ -85,5 +85,5 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/MasterTF/mastertf.github.io.git
+  repo: git@github.com:MasterTF/mastertf.github.io.git
   branch: master

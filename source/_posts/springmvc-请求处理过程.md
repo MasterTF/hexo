@@ -5,6 +5,8 @@ tags:
     - Spring
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 
 一个请求到达服务器之后，springmvc处理过程：
@@ -297,7 +299,7 @@ public interface HandlerInterceptor {
 拦截器就是我们定义的interceptor，关于拦截器的讲解在 [spring拦截器](https://mastertf.github.io/2016/10/09/spring-%E6%8B%A6%E6%88%AA%E5%99%A8/)
 至此，HandlerExecutionChain整个执行脉络也就清楚了：在真正调用其handler对象前，HandlerInterceptor接口实现类组成的数组将会被遍历，其preHandle方法会被依次调用，然后真正的handler对象将被调用。
 handler对象被调用后，就生成了需要的响应数据，在将处理结果写到HttpServletResponse对象之前（SpringMVC称为渲染视图），其postHandle方法会被依次调用。视图渲染完成后，最后afterCompletion方法会被依次调用，整个web请求的处理过程就结束了。
- 
+
 这个HandlerExecutionChain类中以Object引用所声明的handler对象，到底是什么？它是怎么被调用的？
 继续看DispatcherServlet.doDispatch()方法24行：
 
@@ -362,5 +364,4 @@ public interface View {
 至此，我们了解了一个典型的完整的web请求在SpringMVC中的处理过程和其中涉及到的核心类和接口。
 
 在一个典型的SpringMVC调用中，HandlerExecutionChain中封装handler对象就是用@Controller注解标识的类的一个实例，根据类级别和方法级别的@RequestMapping注解，由默认注册的DefaultAnnotationHandlerMapping（3.1.3中更新为RequestMappingHandlerMapping类，但是为了向后兼容，DefaultAnnotationHandlerMapping也可以使用）生成HandlerExecutionChain对象，再由AnnotationMethodHandlerAdapter（3.1.3中更新为RequestMappingHandlerAdapter类，但是为了向后兼容，AnnotationMethodHandlerAdapter也可以使用）来执行这个HandlerExecutionChain对象，生成最终的ModelAndView对象后，再由具体的View对象的render方法渲染视图。
-
 

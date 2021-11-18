@@ -6,6 +6,8 @@ tags:
     - 工具
 categories:
     - 工具
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 
 介绍下比较好用的zsh安装以及相关的配置

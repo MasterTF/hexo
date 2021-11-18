@@ -6,6 +6,8 @@ tags:
     - 消息队列
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 摘自一篇博客，找不到了 
 
@@ -188,5 +190,4 @@ Kafka高度依赖文件系统来存储和缓存消息，一般的人认为磁盘
 
 ## 推荐阅读
 1. https://blog.csdn.net/lizhitao/article/details/39499283
-
 

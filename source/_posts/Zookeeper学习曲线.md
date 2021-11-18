@@ -6,6 +6,8 @@ tags:
     - 分布式
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 ## ZooKeeper 介绍
 http://zookeeper.apache.org/
@@ -19,5 +21,4 @@ https://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/
 ## 共享锁
 ## 队列管理
 ## ZooKeeper 原理部分
-
 

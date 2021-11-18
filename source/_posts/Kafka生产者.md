@@ -6,6 +6,8 @@ tags:
     - 消息队列
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 ## 发送消息步骤
 ![](/img/15255335466815.jpg)
