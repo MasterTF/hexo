@@ -5,6 +5,8 @@ tags:
     - Spring
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 ## 实例化过程
 ![spring bean实例化过程](/img/spring%20bean%E5%AE%9E%E4%BE%8B%E5%8C%96%E8%BF%87%E7%A8%8B.png)

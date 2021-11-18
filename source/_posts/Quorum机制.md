@@ -7,6 +7,8 @@ tags:
 categories:
     - 技术
     - 分布式系统
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 ## WARO机制介绍
 先看一个极端的情况：WARO(Write All Read one)是一种简单的副本控制协议，当Client请求向某副本写数据时(更新数据)，只有当所有的副本都更新成功之后，这次写操作才算成功，否则视为失败。

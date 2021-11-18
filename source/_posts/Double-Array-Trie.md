@@ -6,4 +6,6 @@ tags:
     - 算法
 categories:
     - 算法
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---

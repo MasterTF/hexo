@@ -6,6 +6,8 @@ tags:
     - 工具
 categories:
     - 工具
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 实际上Vagrant只是一个让你可以方便设置你想要的虚拟机的便携式工具，它底层支持VirtualBox、VMware甚至AWS作为虚拟机系统，本书中我们将使用VirtualBox来进行说明，所以第一步需要先安裝Vagrant和VirtualBox。
 

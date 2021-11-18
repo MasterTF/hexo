@@ -6,6 +6,8 @@ tags:
     - JAVA
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 
 ## 背景

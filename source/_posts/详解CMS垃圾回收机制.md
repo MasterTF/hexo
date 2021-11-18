@@ -7,6 +7,8 @@ tags:
 comments: true
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 ## 什么是CMS？
 Concurrent Mark Sweep。
@@ -52,14 +54,14 @@ CMS以获取最小停顿时间为目的。
 >[1 CMS-remark: 479379K(515960K)] 480200K(522488K), 0.0025249 secs] 
 >[Times: user=0.01 sys=0.00, real=0.00 secs]
 >Rescan阶段(remark阶段的一个子阶段)会扫描新生代和老年代中的对象。在日志中可以看到此阶段标识为Rescan (parallel)，说明此阶段是并行进行的。
- 
+
 **重点来了：全量的扫描新生代和老年代会不会很慢？**肯定会。
 CMS号称是停顿时间最短的GC，如此长的停顿时间肯定是不能接受的。
 如何解决呢？
 大家可以先思考下。
+
  
- 
- 
+
 **必须要有一个能够快速识别新生代和老年代活着的对象的机制。**
 **先说新生代。**
 新生代垃圾回收完剩下的对象全是活着的，并且活着的对象很少。
@@ -157,12 +159,12 @@ CMS 提供了CMSInitiatingOccupancyFraction参数来设置老年代空间使用�
 这时，虚拟机就会启动备案：使用Serial Old收集器重新对老年代进行垃圾回收.如此一来，停顿时间变得更长。
 所以CMSInitiatingOccupancyFraction的设置要具体问题具体分析。
 网上有一些设置此参数的公式，个人认为不是很严谨(原因就是CMS另外一个问题导致的),因此不写出来以免大家疑惑。
- 
+
 其实CMS有动态检查机制。
 CMS会根据历史记录，预测老年代还需要多久填满及进行一次回收所需要的时间。
 在老年代空间用完之前，CMS可以根据自己的预测自动执行垃圾回收。
 这个特性可以使用参数UseCMSInitiatingOccupancyOnly来关闭。
- 
+
 这里提个问题，如果让你设计，**如何预测什么时候开始自动执行**？
 
 ### 标记-清除 
@@ -176,14 +178,14 @@ CMS的解决方案是使用UseCMSCompactAtFullCollection参数(默认开启)，�
 CMS存在的问题已经讲清楚，大家消化下。
 *****
 至此，CMS相关内容已经讲完。
- 
+
 ## 总结
 **CMS采用了多种方式尽可能降低GC的暂停时间,减少用户程序停顿**。
 **停顿时间降低的同时牺牲了CPU吞吐量** 。
 **这是在停顿时间和性能间做出的取舍，可以简单理解为"空间(性能)"换时间**。
- 
+
 文中提到的几个问题大家可以把自己当成设计者来思考。
- 
+
 ## 参考资料
 <https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/cms.html#concurrent_mark_sweep_cms_collector>
 <https://blogs.oracle.com/jonthecollector/entry/did_you_know>
@@ -192,5 +194,4 @@ CMS存在的问题已经讲清楚，大家消化下。
 <https://blogs.msdn.microsoft.com/abhinaba/2009/03/02/back-to-basics-generational-garbage-collection/>
 <https://bugs.openjdk.java.net/browse/JDK-8027132>
 《深入理解Java虚拟机 JVM高级特性与最佳实践》
-
 

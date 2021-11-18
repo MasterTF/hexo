@@ -6,6 +6,8 @@ tags:
     - RabbitMQ
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 ## 安装
 mac上安装rabbitmq比较简单，参考官网教程 http://www.rabbitmq.com/install-standalone-mac.html 即可。遇到了下载很慢问题，找了其他网站上下。
@@ -26,7 +28,8 @@ mac上安装rabbitmq比较简单，参考官网教程 http://www.rabbitmq.com/in
     - sudo service iptables save
     - sudo service iptables restart
 7. 浏览器访问：http://localhost:15672 默认管理员账号：guest 默认管理员密码：guest
-    
+   
+
 参考https://github.com/judasn/Linux-Tutorial/blob/master/RabbitMQ-Install-And-Settings.md
 
 ## 核心概念
@@ -296,7 +299,7 @@ channel.basic_publish(exchange='first',
                           headers = {'a': '1', 'b': '2'},
                       ),
                       body='Hello World!')
- ```
+```
 
 绑定时, 通过 arguments 参数设定匹配规则, x-match 是一个特殊的规则, 表示需要全部匹配上, 还是只匹配一条:
 
@@ -337,7 +340,7 @@ for i in range(10):
     channel.basic_publish(exchange='first',
                           routing_key='',
                           body=str(i))
-``` 
+```
 
 然后是消费者的实现:
 
@@ -357,7 +360,7 @@ def callback(ch, method, properties, body):
 
 channel.basic_consume(callback, queue='A', no_ack=True)
 channel.start_consuming()
-``` 
+```
 
 上面的代码, 是假设处理一条消息需要 10 秒的时间. 但是事实上, 你只要一执行代码, 马上再使用 rabbitmqctl 查看队列状态时, 会发现队列已经空了. 因为在关闭 ack 的情况下, Queue 的行为是, 一旦有消费者请求, 那么当前队列中的消息它都会一次性吐很多出去.
 
