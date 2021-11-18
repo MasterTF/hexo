@@ -6,6 +6,8 @@ tags:
     - 算法
 categories:
     - 算法
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 本篇主要是对网上资源的整理，缺乏原创。
 ## 什么是SimHash

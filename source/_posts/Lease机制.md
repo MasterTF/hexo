@@ -7,6 +7,8 @@ tags:
 categories:
     - 技术
     - 分布式系统
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 
 ## 本质
@@ -65,10 +67,10 @@ Q在某时刻未能预期收到主节点A的心跳，Q认为A已经异常，于�
     - 节点 A、B、C 依然周期性的发送 heart beat 报告自身状态，节点 Q 收到 heart beat 后发送一个 lease，表示节点 Q 确认了节点 A、B、C 的状态
     - 节点 Q 可以给 primary 节点一个特殊的 lease，表示节点可以作为 primary 工作。
     - 一旦节点 Q 希 望切换新的 primary，则只需等前一个 primary 的 lease 过期，则就可以安全的颁发新的 lease 给新的 primary 节点，而不会出现“双主”问题。
-风险：
-用一个中心节点发送 lease 也有很大的风险，一旦该中心节点宕机或网络异常， 则所有的节点没有 lease。
-实际系统总是使用多个中心节点互为副 本，成为一个小的集群，该小集群具有高可用性，对外提供颁发 lease 的功能。
-chubby 和 zookeeper 都是基于这样的设计。
+    风险：
+    用一个中心节点发送 lease 也有很大的风险，一旦该中心节点宕机或网络异常， 则所有的节点没有 lease。
+    实际系统总是使用多个中心节点互为副 本，成为一个小的集群，该小集群具有高可用性，对外提供颁发 lease 的功能。
+    chubby 和 zookeeper 都是基于这样的设计。
 
 ## Lease有效时间选择
 当颁发者在发布 lease 时通常都是将当前时间加上一个固定的时长从而计算出 lease 的有效期，如何确定有效期？

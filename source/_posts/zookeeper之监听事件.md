@@ -6,6 +6,8 @@ tags:
     - 分布式
 categories:
     - 技术
+typora-root-url: ../../source
+typora-copy-images-to: ../../source/img
 ---
 ## zookeeper watch机制
 一个zk的节点可以被监控，包括这个目录中存储的数据的修改，子节点目录的变化，一旦变化可以通知设置监控的客户端，这个功能是zookeeper对于应用最重要的特性，通过这个特性可以实现的功能包括配置的集中管理，集群管理，分布式锁等等。
@@ -406,5 +408,4 @@ New ZooKeeper时注册的watcher叫default watcher，它不是一次性的，只
 https://zookeeper.apache.org/doc/trunk/zookeeperProgrammers.html
 http://lixuguang.iteye.com/blog/2342721
 https://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/
-
 
