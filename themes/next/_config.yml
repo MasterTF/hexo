@@ -203,7 +203,7 @@ post_wordcount:
 wechat_subscriber:
   enabled: true
   qcode: /images/wechat_pay.jpeg
-  description: 可以白嫖我的颜值，不能白嫖我的才华，打赏😆😆！！!
+  description: 打钱! 打钱! 打钱😡😡😡
 
 # Declare license on posts
 post_copyright:
@@ -625,5 +625,5 @@ images: images
 # Theme version
 version: 5.1.1
 
-reward_comment: 打赏完了加微信白嫖颜值😁😁！！！
+reward_comment: 打赏完了让我夸夸你🤨
 wechatpay: /images/wechat_ercode.jpeg
