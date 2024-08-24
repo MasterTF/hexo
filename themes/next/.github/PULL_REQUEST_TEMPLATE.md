@@ -1,25 +1,46 @@
-# ATTENTION!
-1. Please, write readme of pulls **in English**. Not all contributors/collaborators know Chinese language and Google translate can't always give true translates on issues. Thanks!
-2. If your pull is big and include many separated functions, recommended to use this pull template. If not, you may delete all of this and make pull readme as you want.
-3. xxxxxxx - commit link on modified file. Just copy this below your pull request readme.
-4. You can paste any image directly from your clipboard. Just press **Print Scr** and paste it into pull readme - link on image will generate and paste automaticly.
-5. DELETE ALL THIS RECOMENDATIONS AND USE TEMPLATES WHICH PLACED BELOW DIVIDED LINE.
-***
-## PART X. Title of fixes or enhancements.
-Short description in several words here.
+<!-- ATTENTION!
+1. Please write pull request readme in English, thanks!
 
-### Files modified:
-1.	Short description of modified file [1].			xxxxxxx
-2.	Short description of modified file [2].			xxxxxxx
-3.	Short description of modified file [3].			xxxxxxx
+2. Always remember that NexT includes 4 schemes. And if on one of them works fine after the changes, on another scheme this changes can be broken. Muse and Mist have similar structure, but Pisces is very difference from them. Gemini is a mirror of Pisces with some styles and layouts remakes. So, please make the tests at least on two schemes (Muse or Mist and Pisces or Gemini).
 
-### How it looks?
-![image](https://user-images.githubusercontent.com/xxxxxxxx/xxxxxxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx.png)
+3. In addition, you need to confirm that the changes made by this PR are compatible with PJAX and Dark Mode.
+-->
 
-Live demo [here](http://site.com/).
+## PR Checklist <!-- 我确认我已经查看了 -->
+<!-- Change [ ] to [x] to select (将 [ ] 换成 [x] 来选择) -->
+
+- [ ] The commit message follows [guidelines for NexT](https://github.com/theme-next/hexo-theme-next/blob/master/.github/CONTRIBUTING.md).
+- [ ] Tests for the changes was maked (for bug fixes / features).
+   - [ ] Muse | Mist have been tested.
+   - [ ] Pisces | Gemini have been tested.
+- [ ] [Docs](https://github.com/theme-next/theme-next.org/tree/source/source/docs) in [NexT website](https://theme-next.org/docs/) have been added / updated (for features).
+<!-- For adding Docs edit needed file here: https://github.com/theme-next/theme-next.org/tree/source/source/docs and create PR with this changes here: https://github.com/theme-next/theme-next.org/pulls -->
+
+## PR Type
+<!-- What kind of change does this PR introduce? -->
+
+- [ ] Bugfix.
+- [ ] Feature.
+- [ ] Code style update (formatting, local variables).
+- [ ] Refactoring (no functional changes, no api changes).
+- [ ] Build & CI related changes.
+- [ ] Documentation.
+- [ ] Translation. <!-- We use Crowdin to manage translations https://i18n.theme-next.org -->
+- [ ] Other... Please describe:
+
+## What is the current behavior?
+<!-- Please describe the current behavior that you are modifying, or link to a relevant issue -->
+
+Issue resolved: N/A
+
+## What is the new behavior?
+<!-- Description about this pull, in several words -->
+
+- Screenshots with this changes: N/A
+- Link to demo site with this changes: N/A
 
 ### How to use?
-In Next `_config.yml`:
-```
-...
+In NexT `_config.yml`:
+```yml
+
 ```
