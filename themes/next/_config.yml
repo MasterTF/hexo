@@ -197,12 +197,12 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: link
-  title: Links
+  title: 本广告位长期招租
   # Available values: block | inline
   layout: block
 
 links:
-  #Title: http://yoursite.com
+  首页: https://mastertf.github.io/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
