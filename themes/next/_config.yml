@@ -202,7 +202,7 @@ links_settings:
   layout: block
 
 links:
-  首页: https://mastertf.github.io/
+  广告链接: https://mastertf.github.io/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
