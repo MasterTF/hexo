@@ -5,6 +5,7 @@ tags:
     - SimHash
     - 算法
 categories:
+    - 技术
     - 算法
 typora-root-url: ../../source
 typora-copy-images-to: ../../source/img

@@ -4,6 +4,7 @@ date: 2021-03-16 17:32:43
 tags: 
     - 面向对象
 categories:
+    - 技术
     - 系统设计
 typora-root-url: ../../source
 typora-copy-images-to: ../../source/img
