@@ -40,8 +40,8 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon: 
-  small: /favicon.ico
-  medium: /favicon.ico
+  small: /avatar.ico
+  medium: /avatar.ico
   apple_touch_icon: /favicon.ico
   safari_pinned_tab: /favicon.ico
   #android_manifest: /images/manifest.json
@@ -124,7 +124,7 @@ menu:
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  commonweal: /404/ || heartbeat
+  commonweal: /404.html || heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -164,7 +164,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/avatar.png
+  url: /img/avatar.jpg
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -272,7 +272,7 @@ reward_settings:
   comment: 打钱! 打钱! 打钱😡😡😡
 
 reward:
-  wechatpay: /images/wechat_pay.jpeg
+  wechatpay: /img/wechat_pay.jpg
   #alipay: /images/alipay.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
@@ -282,7 +282,7 @@ reward:
 follow_me:
   #Twitter: https://twitter.com/username || twitter
   #Telegram: https://t.me/channel_name || telegram
-  #WeChat: /images/wechat_channel.jpg || wechat
+  #WeChat: /img/wechat_ercode.jpeg || wechat
   #RSS: /atom.xml || rss
 
 # Related popular posts
