@@ -253,6 +253,22 @@
         <div class="post-eof"></div>
       </footer>
     {%- endif %}
+
+<!-- 底部广告 -->
+<!-- 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3508045112244921"
+     crossorigin="anonymous"></script>
+
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3508045112244921"
+     data-ad-slot="3619189222"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+-->
   </article>
   {######################}
   {### END POST BLOCK ###}
